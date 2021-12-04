@@ -28,11 +28,11 @@
 
        PROCEDURE DIVISION.
            PERFORM READ-FILE.
-           DISPLAY 'Depth: ' WS-DEPTH
-           DISPLAY 'Position: ' WS-POSITION
-           DISPLAY 'Aim: ' WS-AIM
+           DISPLAY "Depth: " WS-DEPTH
+           DISPLAY "Position: " WS-POSITION
+           DISPLAY "Aim: " WS-AIM
            MULTIPLY WS-DEPTH BY WS-POSITION GIVING WS-ANSWER
-           DISPLAY 'Answer: ' WS-ANSWER
+           DISPLAY "Answer: " WS-ANSWER
            STOP RUN.
 
        READ-FILE.
@@ -68,9 +68,9 @@
                MULTIPLY WS-VALUE BY WS-AIM GIVING WS-VALUE
                ADD WS-VALUE TO WS-DEPTH GIVING WS-DEPTH
            ELSE IF WS-CMD-NAME = "up" THEN
-               SUBTRACT 1 FROM WS-AIM GIVING WS-AIM
+               SUBTRACT WS-VALUE FROM WS-AIM GIVING WS-AIM
            ELSE IF WS-CMD-NAME = "down" THEN
-               ADD 1 TO WS-AIM GIVING WS-AIM
+               ADD WS-VALUE TO WS-AIM GIVING WS-AIM
            ELSE
                DISPLAY "Wrong cmd value :" WS-CMD-NAME
                MOVE 'Y' TO WS-EOF
