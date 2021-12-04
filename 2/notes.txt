@@ -1,0 +1,6 @@
+https://github.com/Apress/beg-cobol-for-programmers/blob/master/978-1-4302-6253-4_Coughlan_Ch05/Listing5-4.cbl
+useful code examples!
+
+
+https://www.tutorialspoint.com/cobol/cobol_data_types.htm
+data types & magic numbers explained
