@@ -1,4 +1,4 @@
-2⊥(0=S)×2⊥S←⊃⊃0.5<(1÷≢A)×+/¨⊂⍉A←'1'=⊃⎕FIO[49]'input.txt'
+2⊥(0=S)×2⊥S←⊃⊃0.5<(1÷≢A)×+/⍉A←'1'=⊃⎕FIO[49]'input.txt'
 
 ⍝ Part 1 decompressed:
 ⍝ I←⎕FIO[49]'input.txt' ⍝ read file
